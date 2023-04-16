@@ -34,3 +34,14 @@ b_prost = 15
 pole_prost=a_prost*b_prost
 obwod_prost=2*a_prost+2*b_prost
 print("Obwod prostokata wynosi " + str(obwod_prost) + ", zas pole wynosi " + str(pole_prost) + ".")
+
+# trapez
+
+a_trapez=10
+b_trapez=8
+c_trapez=8
+d_trapez=8
+h_trapez=6
+pole_trapez=1/2*(a_trapez+b_trapez)*h_trapez
+obwod_trapez=a_trapez+b_trapez+c_trapez+d_trapez
+print("Obwod trapezu wynosi " + str(obwod_trapez) + ", zas pole wynosi " + str(pole_trapez) + ".")
