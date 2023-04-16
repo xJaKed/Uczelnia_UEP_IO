@@ -1,3 +1,4 @@
+import math
 # trojkat
 
 a = 10
@@ -19,11 +20,17 @@ obwod_rombu = a*4
 print("Obwod rombu wynosi " + str(obwod_rombu) + ", zas pole wynosi " + str(pole_rombu) + ".")
 
 # kolo
-import math
 
-
+pi=round(float(math.pi),2)
 r_kolo = 5
-pole_kolo = float(math.pi)*(r_kolo)**2
-obwod_kolo = 2*float(math.pi)*r_kolo
+pole_kolo = pi*(r_kolo)**2
+obwod_kolo = 2*pi*r_kolo
 print("Obwod kola wynosi " + str(obwod_kolo) + ", zas pole wynosi " + str(pole_kolo) + ".")
 
+# prostokat
+
+a_prost = 5
+b_prost = 15
+pole_prost=a_prost*b_prost
+obwod_prost=2*a_prost+2*b_prost
+print("Obwod prostokata wynosi " + str(obwod_prost) + ", zas pole wynosi " + str(pole_prost) + ".")
