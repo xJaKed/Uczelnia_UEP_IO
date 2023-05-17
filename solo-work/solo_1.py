@@ -67,3 +67,41 @@ for student in studenci:
     if student.split()[1][0].upper() == "N":
         liczba_n += 1
 print("Liczba studentow na N wynosi: {}".format(liczba_n))
+
+# zadanie 1.10
+
+wykres_1 = [[2, 4], [4, 4], [6, 4]]
+wykres_2 = [[2, 3], [4, 4], [6, 5]]
+wykres_3 = [[2, 3], [4, 3], [5, 4]]
+
+def sprawdzenie(wykres):
+        x1=wykres[0][0]
+        x2=wykres[1][0]
+        x3=wykres[2][0]
+        y1=wykres[0][1]
+        y2=wykres[1][1]
+        y3=wykres[2][1]
+        a = (y1-y2)/(x1-x2)
+        if (y3-y1)/(x3-x1)==a:
+            return True
+        else:
+            return False
+
+wykres_1_funkcja_liniowa = sprawdzenie(wykres_1)
+wykres_2_funkcja_liniowa = sprawdzenie(wykres_2)
+wykres_3_funkcja_liniowa = sprawdzenie(wykres_3)
+
+if wykres_1_funkcja_liniowa==True:
+    print("Dla punktow w wykres_1 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_1 nie mozna wyznaczyc funkcji liniowej.")
+
+if wykres_2_funkcja_liniowa==True:
+    print("Dla punktow w wykres_2 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_2 nie mozna wyznaczyc funkcji liniowej.")
+
+if wykres_3_funkcja_liniowa==True:
+    print("Dla punktow w wykres_3 mozna wyznaczyc funkcje liniowa.")
+else:
+    print("Dla punktow w wykres_3 nie mozna wyznaczyc funkcji liniowej.")
